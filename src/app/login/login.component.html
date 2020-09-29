@@ -2,18 +2,8 @@
 
   
 
-    <div class="payment">
-      <mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup"
-                               value="primary"
-                               aria-label="Change color">
-          <div class="hidden">
-        <mat-button-toggle value="primary"> Primary </mat-button-toggle>
-        <mat-button-toggle value="accent"> Accent </mat-button-toggle>
-      </div>
-      </mat-button-toggle-group>
-    </div>
     
-    <mat-tab-group [color]="colorToggle.value" [backgroundColor]="backgroundColorToggle.value">
+    <mat-tab-group #tabref backgroundColor="primary" (selectedTabChange)="fuu(tabref.selectedIndex)">
       <mat-tab label="User">
         
     
@@ -43,18 +33,7 @@
         <button mat-raised-button color="warn">login</button>
     </div>
                 
-     
-    <div>
-    &nbsp;&nbsp;&nbsp;
-      <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
-                               value="primary"
-                               aria-label="Change color">
-                               <div class="hidden">
-        <mat-button-toggle value="primary"> Primary </mat-button-toggle>
-        <mat-button-toggle value="accent"> Accent </mat-button-toggle>
-      </div>
-      </mat-button-toggle-group>
-    </div>
+ 
     
         </div>
       </mat-tab>
@@ -88,15 +67,10 @@
                 
      
     <div>
-      <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
-                               value="primary"
-                               aria-label="Change color">
-                               <div class="hidden">
-        <mat-button-toggle value="primary"> Primary </mat-button-toggle>
-        <mat-button-toggle value="accent"> Accent </mat-button-toggle>
+    
       </div>
-      </mat-button-toggle-group>
-    </div>
+     
+   
       </div>
     
     
