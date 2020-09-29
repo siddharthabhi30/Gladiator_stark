@@ -1,0 +1,57 @@
+.container{
+    height: 500px;
+    width: 30%;
+    background-color: rgb(241, 241, 241);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    border-radius: 5px;
+    position: absolute;
+    left: 575px;
+    color: rgb(64, 94, 28);
+   
+    transition:
+    width 2s ease,
+   height 2s ease,
+     transform 0.5s ease;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+.flip{
+    transform: rotateY(90deg);
+}
+.container img{
+   height: 95%;
+   width: 100%;
+
+}
+
+
+.aero{
+    position: absolute;
+    top: 40px;
+    left: 575px; 
+    height: 160px;
+    width: 400px;
+    transition: opacity 2s ease ;
+}
+
+.hide{
+    opacity: 0;
+}
+.reduce{
+    height: 40px;
+    width: 200px;
+}
+h1{
+    margin-left: 90px;
+   
+}
+.thank{
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

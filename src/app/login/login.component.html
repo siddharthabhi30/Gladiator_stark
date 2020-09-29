@@ -1,0 +1,106 @@
+<div class="main">
+
+  
+
+    <div class="payment">
+      <mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup"
+                               value="primary"
+                               aria-label="Change color">
+          <div class="hidden">
+        <mat-button-toggle value="primary"> Primary </mat-button-toggle>
+        <mat-button-toggle value="accent"> Accent </mat-button-toggle>
+      </div>
+      </mat-button-toggle-group>
+    </div>
+    
+    <mat-tab-group [color]="colorToggle.value" [backgroundColor]="backgroundColorToggle.value">
+      <mat-tab label="User">
+        
+    
+        <div>
+        
+       <div class="user">
+        <mat-form-field class="example-form-field">
+            <mat-label>Enter username</mat-label>
+            <input matInput type="text" [(ngModel)]="value">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+       </div>
+       <div class="pass">
+    
+    
+        <mat-form-field class="example-form-field">
+            <mat-label>Enter Password</mat-label>
+            <input matInput type="text" [(ngModel)]="value2">
+            <button mat-button *ngIf="value2" matSuffix mat-icon-button aria-label="Clear" (click)="value2=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+    
+        <br>
+        <button mat-raised-button color="warn">login</button>
+    </div>
+                
+     
+    <div>
+    &nbsp;&nbsp;&nbsp;
+      <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
+                               value="primary"
+                               aria-label="Change color">
+                               <div class="hidden">
+        <mat-button-toggle value="primary"> Primary </mat-button-toggle>
+        <mat-button-toggle value="accent"> Accent </mat-button-toggle>
+      </div>
+      </mat-button-toggle-group>
+    </div>
+    
+        </div>
+      </mat-tab>
+      <mat-tab label="Admin"> 
+        <div>
+    
+    
+       <div class="user">
+        <mat-form-field class="example-form-field">
+            <mat-label>Enter username</mat-label>
+            <input matInput type="text" [(ngModel)]="value">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+       </div>
+       <div class="pass">
+    
+    
+        <mat-form-field class="example-form-field">
+            <mat-label>Clearable input</mat-label>
+            <input matInput type="text" [(ngModel)]="value2">
+            <button mat-button *ngIf="value2" matSuffix mat-icon-button aria-label="Clear" (click)="value2=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+    
+        <br>
+        <button mat-raised-button color="warn">login</button>
+    </div>
+                
+     
+    <div>
+      <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
+                               value="primary"
+                               aria-label="Change color">
+                               <div class="hidden">
+        <mat-button-toggle value="primary"> Primary </mat-button-toggle>
+        <mat-button-toggle value="accent"> Accent </mat-button-toggle>
+      </div>
+      </mat-button-toggle-group>
+    </div>
+      </div>
+    
+    
+    </mat-tab>
+     
+    </mat-tab-group>               
+        </div>

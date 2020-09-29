@@ -1,0 +1,77 @@
+.container{
+    position: relative;
+    height: 500px;
+    width: 30%;
+    background-color: rgb(202, 217, 218);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    border-radius: 5px;
+    position: absolute;
+    left: 575px;
+    transition: transform 1.8s;
+}
+
+input{
+    margin-left: 30px;
+    width: 80%;
+}
+@keyframes example {
+    from   {  left: 11000px; opacity: 0%;}
+  
+    to{  left: 575px; opacity: 100%;}
+  }
+  
+
+.one{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: -1s;
+    animation-timing-function: ease-out;
+   
+}
+
+
+.proceed{
+    position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+   top: 90%;
+   left: 37%;
+    display: block;
+    height: 30px;
+    width: 100px;
+   
+    font-size: 1.4em;
+    background-color:rgb(80, 187, 80);
+    border: none;
+}
+
+
+.flip{
+    transform: rotateY(90deg);
+}
+
+.payment_method{
+    margin-top: 20px;
+}
+
+.example-form-field {
+    width: 200px;
+  }
+
+.spinner{
+    position: absolute;
+    top: 200px;
+    right: 604px;
+    transition: all 1.2s;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.hide_container{
+    opacity: 0.3;
+}

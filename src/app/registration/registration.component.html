@@ -1,0 +1,77 @@
+<div class="container">
+
+<mat-vertical-stepper linear #stepper style="margin-left: 40%;">
+    <mat-step [stepControl]="formGroup1" >
+      <form [formGroup]="formGroup1">
+        <ng-template matStepLabel>Basic information</ng-template>
+        <mat-form-field>
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="title" placeholder="Title" required>
+        </mat-form-field>
+        <br>
+        <ng-template matStepLabel>Fill out your name</ng-template>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="firstname" placeholder="name" required>
+        </mat-form-field>
+        <br>
+        <ng-template matStepLabel>Fill out your Last Name</ng-template>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastname" placeholder="name" required>
+        </mat-form-field>
+
+        <br>
+        <ng-template matStepLabel>Date of Birth</ng-template>
+        <mat-form-field>
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dateOfBirth" required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="formGroup3" >
+        <form [formGroup]="formGroup3">
+          <ng-template matStepLabel>Security Question</ng-template>
+          <mat-form-field>
+            <mat-label>Security Question</mat-label>
+            <input matInput formControlName="securityQuestion" placeholder="security question" required>
+          </mat-form-field>
+          <br>
+          <ng-template matStepLabel>answer</ng-template>
+          <mat-form-field>
+            <mat-label>answer</mat-label>
+            <input   matInput formControlName="answer" placeholder="password" required>
+          </mat-form-field>
+        
+        </form>
+      </mat-step>
+    <mat-step [stepControl]="formGroup2" >
+        <form [formGroup]="formGroup2">
+          <ng-template matStepLabel>Credentials</ng-template>
+          <mat-form-field>
+            <mat-label>Email id </mat-label>
+            <input matInput formControlName="email" placeholder="email" required>
+          </mat-form-field>
+          <br>
+          <ng-template matStepLabel>Fill out your name</ng-template>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input  type="password" matInput formControlName="password" placeholder="password" required>
+          </mat-form-field>
+          <br>
+          <ng-template matStepLabel>Fill out your Last Name</ng-template>
+          <mat-form-field>
+            <mat-label>Confirm Password</mat-label>
+            <input type="password" matInput formControlName="confirmPassword" placeholder="confirmPassword" required>
+          </mat-form-field>
+         
+        </form>
+      </mat-step>
+
+</mat-vertical-stepper>
+
+</div>
