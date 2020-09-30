@@ -1,3 +1,8 @@
+import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
+import { RemoveFlightComponent } from './remove-flight/remove-flight.component';
+import { AddFlightComponent } from './add-flight/add-flight.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { CongratulationComponent } from './congratulation/congratulation.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
@@ -15,7 +20,12 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'',component:LandingPageComponent},
   {path:'payment',component:PaymentComponent},
-  {path:'congratulation',component:CongratulationComponent}
+  {path:'congratulation',component:CongratulationComponent},
+  {path:'forgotpassword',component:ForgotPasswordComponent},
+  {path:'changepassword',component:ChangePasswordComponent},
+  {path:'addflight',component:AddFlightComponent},
+  {path:'removeflight',component:RemoveFlightComponent},
+  {path:'adminhomepage',component:AdminHomePageComponent}
 
 
 ];
@@ -25,4 +35,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponent=[LandingPageComponent,FlightSelectComponent,FlightSearchComponent,RegistrationComponent,LoginComponent,PaymentComponent,CongratulationComponent]
+export const routingComponent=[LandingPageComponent,FlightSelectComponent,FlightSearchComponent
+  ,RegistrationComponent,LoginComponent,PaymentComponent
+  ,CongratulationComponent,ForgotPasswordComponent,ChangePasswordComponent,AdminHomePageComponent
+,RemoveFlightComponent,AddFlightComponent]

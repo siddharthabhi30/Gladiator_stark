@@ -10,11 +10,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { AddFlightComponent } from './add-flight/add-flight.component';
+import { RemoveFlightComponent } from './remove-flight/remove-flight.component';
+import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
   routingComponent,
+  AddFlightComponent,
+  RemoveFlightComponent,
+  AdminHomePageComponent
+
+
  
 
 

@@ -31,7 +31,6 @@ export class RegistrationComponent implements OnInit {
   
   });
 
-
   formGroup3=this.fb.group({
     securityQuestion:['',Validators.required],
     answer:['',Validators.required]
