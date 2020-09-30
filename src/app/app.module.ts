@@ -13,11 +13,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OtpComponent } from './otp/otp.component';
+import { TwoWayFlighListComponent } from './two-way-fligh-list/two-way-fligh-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
   routingComponent
+
+
 
   ],
   imports: [

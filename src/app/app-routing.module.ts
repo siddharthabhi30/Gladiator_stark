@@ -1,3 +1,5 @@
+import { TwoWayFlighListComponent } from './two-way-fligh-list/two-way-fligh-list.component';
+import { OtpComponent } from './otp/otp.component';
 import { SeatMatrixComponent } from './seat-matrix/seat-matrix.component';
 import { UserHomePageComponent } from './user-home-page/user-home-page.component';
 import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
@@ -29,7 +31,9 @@ const routes: Routes = [
   {path:'removeflight',component:RemoveFlightComponent},
   {path:'adminhomepage',component:AdminHomePageComponent},
   {path:'userhomepage',component:UserHomePageComponent},
-  {path:'seatmatrix',component:SeatMatrixComponent}
+  {path:'seatmatrix',component:SeatMatrixComponent},
+  {path:'otp',component:OtpComponent},
+  {path:'twowayflight',component:TwoWayFlighListComponent}
 
 
 ];
@@ -42,4 +46,4 @@ export class AppRoutingModule { }
 export const routingComponent=[LandingPageComponent,FlightSelectComponent,FlightSearchComponent
   ,RegistrationComponent,LoginComponent,PaymentComponent
   ,CongratulationComponent,ForgotPasswordComponent,ChangePasswordComponent,AdminHomePageComponent
-,RemoveFlightComponent,AddFlightComponent,UserHomePageComponent, SeatMatrixComponent]
+,RemoveFlightComponent,AddFlightComponent,UserHomePageComponent, SeatMatrixComponent,  TwoWayFlighListComponent,  OtpComponent]

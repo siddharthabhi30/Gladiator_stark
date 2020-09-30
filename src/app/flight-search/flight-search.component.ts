@@ -26,7 +26,7 @@ export class FlightSearchComponent implements OnInit {
   }
 
   forward(){
-    this._router.navigate(['two']);
+    this._router.navigate(['twowayflight']);
   }
   my(){
     console.log("this");

@@ -113,7 +113,7 @@
        </div>
        Total cost- {{cost*current}}
        <div class="pay">
-      <button mat-raised-button color="primary" [disabled]="goForward" > pay </button>
+      <button mat-raised-button color="primary" [disabled]="goForward" (click)="pay()"> pay </button>
       </div>
    </div>
 </div>

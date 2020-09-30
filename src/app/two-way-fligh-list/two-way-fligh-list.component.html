@@ -1,0 +1,42 @@
+<div class="overlap" [ngClass]="{book2:flip}">
+    <div class="show1" >
+        <h2>one way flight</h2>
+        <div *ngFor="let c of list;index as i;" class="card" [ngClass]="{forcard:forcard,new_height:new_height}" (click)="fu(i)">
+   
+
+            {{c.fno}}  &nbsp;   {{c.fname}}  &nbsp;  {{c.fno}}   &nbsp;  {{c.fcost}}&nbsp; &nbsp;  &nbsp; 
+  
+            
+         
+         </div>
+
+
+
+
+    </div>
+
+    <div class="hid">1.2</div>
+</div>
+<div class="overlap" [ngClass]="{book1:flip}">
+
+    
+    <div class="hid">
+       
+    </div>
+    <div class="show2" >
+
+        <h2>return flight</h2>
+
+
+        <div *ngFor="let c of list;index as i;" class="card" [ngClass]="{forcard:forcard,new_height:new_height}" (click)="fu(i)">
+   
+
+            {{c.fno}}  &nbsp;   {{c.fname}}  &nbsp;  {{c.fno}}   &nbsp;  {{c.fcost}}&nbsp; &nbsp;  &nbsp; 
+  
+            
+         
+         </div>
+    </div>
+
+</div>
+<button mat-raised-button color="accent" (click)="fu()">forward</button>

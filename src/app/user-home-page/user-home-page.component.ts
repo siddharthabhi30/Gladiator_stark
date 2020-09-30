@@ -17,8 +17,6 @@ export class UserHomePageComponent implements OnInit {
   bookedFlights(){
     this._router.navigate(['addflight']);
   }
- life(){
-   //alert("you are fucking stupid ..you choose our airlines ,,what good can you achieve")
-  }
+
 
 }

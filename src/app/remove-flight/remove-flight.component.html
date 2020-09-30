@@ -1,1 +1,29 @@
-<p>remove-flight works!</p>
+<div class="main">
+  
+        <mat-form-field>
+            <mat-label>Flight number</mat-label>
+            <input matInput placeholder="flight Number">
+         </mat-form-field>
+   
+
+    <br><br><br>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+      &nbsp;
+      
+    </div>
+
+           
+    <div>
+        <br><br><br>
+        &nbsp;   &nbsp;   &nbsp;   &nbsp;<button mat-raised-button color="warn" >Remove</button>
+    
+      
+      </div>
+  
+      </div>
