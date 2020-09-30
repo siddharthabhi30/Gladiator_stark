@@ -23,7 +23,7 @@ export class ForgotPasswordComponent implements OnInit {
     this.forward();
   }
   forward(){
-    this._router.navigate(['changepassword']);
+    this._router.navigate(['otp']);
   }
   
 

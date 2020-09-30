@@ -8,7 +8,7 @@
     font-size: 2em;
     border-radius: 5px;
     position: absolute;
-    left: 575px;
+    left: 475px;
     color: rgb(64, 94, 28);
    
     transition:
@@ -32,7 +32,7 @@
 .aero{
     position: absolute;
     top: 40px;
-    left: 575px; 
+    left: 475px; 
     height: 160px;
     width: 400px;
     transition: opacity 2s ease ;

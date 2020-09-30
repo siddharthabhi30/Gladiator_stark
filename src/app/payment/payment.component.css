@@ -9,8 +9,9 @@
     font-size: 1.2em;
     border-radius: 5px;
     position: absolute;
-    left: 575px;
+    left: 475px;
     transition: transform 1.8s;
+    opacity: 0.92;
 }
 
 input{
@@ -20,7 +21,7 @@ input{
 @keyframes example {
     from   {  left: 11000px; opacity: 0%;}
   
-    to{  left: 575px; opacity: 100%;}
+    to{  left: 475px; opacity: 100%;}
   }
   
 
@@ -64,7 +65,7 @@ input{
 .spinner{
     position: absolute;
     top: 200px;
-    right: 604px;
+    right: 684px;
     transition: all 1.2s;
 }
 
@@ -75,3 +76,15 @@ input{
 .hide_container{
     opacity: 0.3;
 }
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/img/login2.jpg');
+    background-repeat: repeat-x;
+ 
+ 
+      background-size: cover;
+
+}
+   

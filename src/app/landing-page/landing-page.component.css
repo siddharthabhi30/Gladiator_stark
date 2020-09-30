@@ -23,7 +23,10 @@ section {
     float: right;
     margin-right: 2%;
   }
-  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+}
   
   
   
@@ -69,13 +72,13 @@ section {
   
   .learn{
     width: 50%;
-    background-color: #007bff;
+
     transition: all 1s;
-    border: 1px  #007bff solid;
+    border: 1px  #1c4c80 solid;
   }
   
   .learn:hover{
     background-color: white;
-    color: #007bff;
+    color: #1c4c80 ;
   }
   

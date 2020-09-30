@@ -14,7 +14,7 @@ export class LandingPageComponent implements OnInit {
   }
 
   fu0(){
-    this._router.navigate(['payment']);
+    this._router.navigate(['landingpage']);
   }
   
   fu(){
