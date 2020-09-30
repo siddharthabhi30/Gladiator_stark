@@ -14,10 +14,10 @@ export class AdminHomePageComponent implements OnInit {
   }
 
   removeFlight(){
-    this._router.navigate(['removeflight']);
+    this._router.navigate(['addflight']);
   }
   addFlight(){
-    this._router.navigate(['addflight']);
+    this._router.navigate(['removeflight']);
   }
 
 }

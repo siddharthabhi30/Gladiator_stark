@@ -1,3 +1,6 @@
+import { SeatMatrixModuleModule } from './seat-matrix-module/seat-matrix-module.module';
+import { AddFlightModulesModule } from './add-flight-modules/add-flight-modules.module';
+import { FlightSelectModuleModule } from './flight-select-module/flight-select-module.module';
 import { PaymentModuleModule } from './payment-module/payment-module.module';
 import { MatButtonModule } from '@angular/material/button';
 import { LoginModuleModule } from './login-module/login-module.module';
@@ -10,23 +13,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
-import { AddFlightComponent } from './add-flight/add-flight.component';
-import { RemoveFlightComponent } from './remove-flight/remove-flight.component';
-import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-  routingComponent,
-  AddFlightComponent,
-  RemoveFlightComponent,
-  AdminHomePageComponent
-
-
- 
-
+  routingComponent
 
   ],
   imports: [
@@ -37,7 +28,7 @@ import { AdminHomePageComponent } from './admin-home-page/admin-home-page.compon
     FlightSearchModuleModule,
     RegistrationModuleModule,
     LoginModuleModule,
-    PaymentModuleModule
+    PaymentModuleModule,FlightSelectModuleModule,AddFlightModulesModule,SeatMatrixModuleModule
  
   ],
   providers: [],

@@ -1,3 +1,5 @@
+import { SeatMatrixComponent } from './seat-matrix/seat-matrix.component';
+import { UserHomePageComponent } from './user-home-page/user-home-page.component';
 import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
 import { RemoveFlightComponent } from './remove-flight/remove-flight.component';
 import { AddFlightComponent } from './add-flight/add-flight.component';
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path:'changepassword',component:ChangePasswordComponent},
   {path:'addflight',component:AddFlightComponent},
   {path:'removeflight',component:RemoveFlightComponent},
-  {path:'adminhomepage',component:AdminHomePageComponent}
+  {path:'adminhomepage',component:AdminHomePageComponent},
+  {path:'userhomepage',component:UserHomePageComponent},
+  {path:'seatmatrix',component:SeatMatrixComponent}
 
 
 ];
@@ -38,4 +42,4 @@ export class AppRoutingModule { }
 export const routingComponent=[LandingPageComponent,FlightSelectComponent,FlightSearchComponent
   ,RegistrationComponent,LoginComponent,PaymentComponent
   ,CongratulationComponent,ForgotPasswordComponent,ChangePasswordComponent,AdminHomePageComponent
-,RemoveFlightComponent,AddFlightComponent]
+,RemoveFlightComponent,AddFlightComponent,UserHomePageComponent, SeatMatrixComponent]

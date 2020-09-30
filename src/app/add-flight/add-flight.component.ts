@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-flight.component.css']
 })
 export class AddFlightComponent implements OnInit {
-
+  fullName;
+  test;
+  selected:string="";
+  foods= [
+    {value: 'steak-0', viewValue: 'Patna'},
+    {value: 'pizza-1', viewValue: 'Delhi'},
+    {value: 'tacos-2', viewValue: 'Banglore'}
+  ];
   constructor() { }
 
   ngOnInit(): void {
+    console.log((this.selected.length))
   }
+  list(val){
+    console.log(val);
+  }
+
+
 
 }

@@ -32,7 +32,8 @@ export class LoginComponent implements OnInit {
   userButton(){
     let userEmail=this.userLogin.controls.email.value;
     let userPassword=this.userLogin.controls.password.value;
-    console.log(userEmail,userPassword)
+    
+    this._router.navigate(['userhomepage']);
 
   }
   adminButton(){
