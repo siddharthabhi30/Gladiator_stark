@@ -55,3 +55,7 @@ h1{
     margin-right: auto;
     width: 80%;
 }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}

@@ -34,14 +34,14 @@
         <ng-template matStepLabel>Fill out your Last Name</ng-template>
         <mat-form-field>
           <mat-label>Last Name</mat-label>
-          <input matInput formControlName="lastname" placeholder="name" required>
+          <input matInput formControlName="lastname" placeholder="name" >
         </mat-form-field>
 
         <br>
         <ng-template matStepLabel>Date of Birth</ng-template>
         <mat-form-field>
             <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker" formControlName="dateOfBirth" required>
+            <input matInput [matDatepicker]="picker" formControlName="dateOfBirth" required readonly >
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>

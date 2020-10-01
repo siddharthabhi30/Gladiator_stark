@@ -13,7 +13,7 @@ export class OtpComponent implements OnInit {
   ngOnInit(): void {
   }
   forward(){
-    this._router.navigate(['login']);
+    this._router.navigate(['changepassword']);
   }
 
 }

@@ -4,6 +4,8 @@
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    left: 36%;
    
 
 }
@@ -15,10 +17,11 @@
     
 }
 .cabin{
-    border-top-left-radius:170px;
-    border-top-right-radius:170px;
+    border-top-left-radius:100px;
+    border-top-right-radius:100px;
     height: 15%;
-    background-color: black;
+    text-align: center;
+   border: 1px black solid;
   
 
 }
@@ -38,7 +41,7 @@
 }
 
 h3{
-    text-align: center;
+ 
     margin-bottom: 2px;
 }
 .col1,.col2{
@@ -83,3 +86,10 @@ h3{
     margin-left: 40%;
   
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

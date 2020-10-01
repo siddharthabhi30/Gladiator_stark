@@ -1,7 +1,7 @@
 .main {
-    margin-top: 260px;
+    margin-top: 160px;
     background-color: #FFFFFF;
-    width: 350px;
+    width: 270px;
     height: 27%;
    margin-left: auto;
    margin-right: auto;
@@ -10,6 +10,11 @@
 }
 
 .container{
-    margin-left: 30%;
+    margin-left: 20%;
   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
 }

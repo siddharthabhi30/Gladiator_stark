@@ -1,3 +1,15 @@
+<mat-toolbar color="primary" class="navbar">
+
+  <div>home</div>
+  <div>
+    <span>Book</span> &nbsp;&nbsp;
+    <span>about us</span>&nbsp;&nbsp;
+    <span>contact us</span>&nbsp;&nbsp;
+   
+  </div>
+</mat-toolbar>
+
+
 <div class="main">
 <div class="container">
 <h2>Enter your Otp</h2>
@@ -6,6 +18,7 @@
     <mat-label>Otp</mat-label>
     <input matInput placeholder="otp" required [(ngModel)]="otp">
  </mat-form-field>
+ <br>
   <button mat-raised-button color="warn" (click)="forward()">Submit</button>
 
 </div>
