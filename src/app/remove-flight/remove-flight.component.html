@@ -1,8 +1,23 @@
+<div class="background">
+<mat-toolbar color="primary" class="navbar">
+
+  <div>home</div>
+  <div>
+    <button mat-button style="font-size: 1.1em;">Basic</button> &nbsp;&nbsp;
+    <span>about us</span>&nbsp;&nbsp;
+    <span>contact us</span>&nbsp;&nbsp;
+    <button mat-button style="font-size: 1.1em;" (click)="adminHome()">admin</button> &nbsp;&nbsp;
+   
+  </div>
+</mat-toolbar>
+
+
 <div class="main">
-  
-        <mat-form-field>
+   <br><br>
+   <form [formGroup]="removeFlight">
+        <mat-form-field appearance="fill">
             <mat-label>Flight number</mat-label>
-            <input matInput placeholder="flight Number">
+            <input matInput placeholder="flight Number" formControlName="flightNumber">
          </mat-form-field>
    
 
@@ -10,20 +25,23 @@
     <div>
         <mat-form-field appearance="fill">
             <mat-label>Date</mat-label>
-            <input matInput [matDatepicker]="picker">
+            <input matInput [matDatepicker]="picker" formControlName="date" readonly>
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
       &nbsp;
       
     </div>
-
+   </form>
            
     <div>
-        <br><br><br>
-        &nbsp;   &nbsp;   &nbsp;   &nbsp;<button mat-raised-button color="warn" >Remove</button>
+     
+    &nbsp;<button mat-raised-button color="warn" (click)="removed()">Remove</button>
     
-      
+      <br>
+      <br>
       </div>
   
       </div>
+
+    </div>

@@ -19,11 +19,20 @@
 <mat-vertical-stepper linear #stepper style="margin-left: 40%;">
     <mat-step [stepControl]="formGroup1" >
       <form [formGroup]="formGroup1">
+
+
         <ng-template matStepLabel>Basic information</ng-template>
-        <mat-form-field>
-          <mat-label>Title</mat-label>
-          <input matInput formControlName="title" placeholder="Title" required>
+        <mat-form-field appearance="fill">
+          <mat-label>Title </mat-label>
+          <mat-select formControlName="title" >
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
+
+
+
         <br>
         <ng-template matStepLabel>Fill out your name</ng-template>
         <mat-form-field>
@@ -46,34 +55,26 @@
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
         
+        
       </form>
     </mat-step>
 
-    <mat-step [stepControl]="formGroup3" >
-        <form [formGroup]="formGroup3">
-          <ng-template matStepLabel>Security Question</ng-template>
-          <mat-form-field>
-            <mat-label>Security Question</mat-label>
-            <input matInput formControlName="securityQuestion" placeholder="security question" required>
-          </mat-form-field>
-          <br>
-          <ng-template matStepLabel>answer</ng-template>
-          <mat-form-field>
-            <mat-label>answer</mat-label>
-            <input   matInput formControlName="answer" placeholder="password" required>
-          </mat-form-field>
-        
-        </form>
-      </mat-step>
+
     <mat-step [stepControl]="formGroup2" >
         <form [formGroup]="formGroup2">
           <ng-template matStepLabel>Credentials</ng-template>
           <mat-form-field>
-            <mat-label>Email id </mat-label>
-            <input matInput formControlName="email" placeholder="email" required>
+            <mat-label>phone number</mat-label>
+            <input matInput formControlName="phoneNumber" placeholder="phone number" required>
           </mat-form-field>
           <br>
-          <ng-template matStepLabel>Fill out your name</ng-template>
+          <ng-template matStepLabel>email</ng-template>
+          <mat-form-field>
+            <mat-label>email</mat-label>
+            <input   matInput formControlName="email" placeholder="email" required>
+          </mat-form-field>
+          
+          <ng-template matStepLabel>Credentials</ng-template>
           <mat-form-field>
             <mat-label>Password</mat-label>
             <input  type="password" matInput formControlName="password" placeholder="password" required>
@@ -82,15 +83,23 @@
           <ng-template matStepLabel>Fill out your Last Name</ng-template>
           <mat-form-field>
             <mat-label>Confirm Password</mat-label>
+            <mat-hint>Passwords should be same</mat-hint>
             <input type="password" matInput formControlName="confirmPassword" placeholder="confirmPassword" required>
           </mat-form-field>
          
         </form>
+        <br> 
+       
+        
+          <button  mat-raised-button  mat-button (click)="forward()" color="primary">Submit</button>
+        
+       
       </mat-step>
 
 </mat-vertical-stepper>
 
 </div>
 <div class="absolute"><img src="assets/img/register4.png" alt=""></div>
+
 </div>
 

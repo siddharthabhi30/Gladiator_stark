@@ -21,3 +21,17 @@
 .card:hover{
     transform: rotateY(25deg) scale(1.5);
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/img/adminHome.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+   
+  }
